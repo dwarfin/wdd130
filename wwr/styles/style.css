@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Permanent+Marker&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -5,16 +7,26 @@
 
 main section{
     text-align: center;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+main section img{
+    box-sizing: border-box;
 }
 
 .home-title{
     color: #FABC2A;
+    font-family: Permanent Marker, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+    margin-top: 10px;
 }
 
 nav a{
     text-align: center;
     color: whitesmoke;
     text-decoration: none;
+    font-family: Lato, Helvetica, sans-serif;
+    padding: 35px;
 }
 
 nav a:hover{
@@ -45,6 +57,8 @@ nav a:hover{
 
 body{
     background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -55,6 +69,11 @@ header{
     background-color: #086788;
     color: whitesmoke;
     text-decoration: none;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover{
@@ -66,6 +85,11 @@ header{
     background-color: #086788;
     color: whitesmoke;
     text-decoration: none;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .join:hover{
@@ -73,38 +97,59 @@ header{
     background-color: whitesmoke;
 }
 
-.msg{
-    background-color: #98B9AB;
+h2 {
+    margin: 0;
 }
 
 h4 {
     color: #FABC2A;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.msg{
+    background-color: #98B9AB;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2{
     color: whitesmoke;
+    font-family: Permanent Marker, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .msg p{
     color: whitesmoke;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: .9em;
+    padding-bottom: 15px;
 }
 
 footer h3{
     color: whitesmoke;
+    font-family: Lato, Helvetica, sans-serif;
 }
 
 footer{
     background-color: #98B9AB;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a{
     color: whitesmoke;
     text-decoration: none;
+    font-family: Lato, Helvetica, sans-serif;
 }
 
 footer a:hover{
     color: #CC5A71;
     text-decoration: underline;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
 
 .logo{
@@ -113,4 +158,31 @@ footer a:hover{
 
 .icon{
     width: 80px;
+    padding-top: 10px;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+.rivers-card{
+    margin: 200px 0;
+}
+
+.camping-card{
+    margin: 200px 0;
+}
+
+.rapids-card{
+    border: 10px black;
+    margin: 200px 0;
+}
+
+.mountains{
+    padding-top: 45px;
+    padding-bottom: 80px;
+}
+
+.card-img {
+    border: 10px solid #CC5A71;
 }
