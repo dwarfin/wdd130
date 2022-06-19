@@ -249,6 +249,41 @@ footer .social img{
     transform: scale(1.1);
 }
 
+/* CSS for rivers page */
+.title-rivers{
+    text-align: center;
+    font-size: 100px;
+    font-family: Permanent Marker, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.rivers-grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 100px 10px;
+    background: #086788;
+}
+
+.rivers-grid p{
+    color: whitesmoke;
+    line-height: 1.5em
+}
+
+.gray-canyon{
+    grid-column: 1/2;
+    padding: 20px;
+}
+
+.salmon-river{
+    grid-column: 2/3;
+    padding: 10px;
+    border: 5px solid rgba(250, 188, 42, .1);
+}
+.grand-canyon{
+    grid-column: 3/4;
+    padding: 20px;
+}
+
+/* Code for smaller screens. */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
