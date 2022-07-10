@@ -180,7 +180,7 @@ footer nav{
 }
 
 #background-3{
-    height: 450;
+    height: 450px;
     grid-column: 1/13;
     grid-row: 8/12;
 }
