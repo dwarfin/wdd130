@@ -25,6 +25,10 @@ header{
     opacity: 95%;
 }
 
+.topnav{
+    display: none;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -45,6 +49,14 @@ nav a{
 
 .header a:hover{
     color: #00FFFF;
+}
+
+.fa-solid .fa-bars{
+    display: none;
+}
+
+.fa-bars{
+    display: none;
 }
 
 #hero{
@@ -182,6 +194,13 @@ footer nav{
     grid-row: 8/12;
 }
 
+#background-4{
+    height: 450px;
+    background-color: #242424;
+    grid-column: 1/13;
+    grid-row: 12/16;
+}
+
 .supplies{
     width: 100%;
     grid-column: 2/5;
@@ -197,61 +216,61 @@ footer nav{
     margin: auto;
     font-family: "Neonderthaw", "Nixie One", Lato, Helvetica, sans-serif;
     font-size: 3.5em;
-    color: #00FFFF;
+    color: #FF911A;
 }
 
 .sow{
     width: 100%;
-    grid-column: 2/5;
+    grid-column: 9/12;
     grid-row: 5/7;
     margin: auto;
 }
 
 .step-two{
     width: 100%;
-    grid-column: 5/7;
+    grid-column: 2/8;
     grid-row: 5/7;
     text-align: center;
     margin: auto;
-    font-family: "Nixie One", Lato, Helvetica, sans-serif;
-    font-size: 1.25em;
-    color: #00FFFF; 
+    font-family: "Neonderthaw", "Nixie One", Lato, Helvetica, sans-serif;
+    font-size: 3.5em;
+    color: #FFFF66; 
 }
 
 .dws{
     width: 100%;
-    grid-column: 9/12;
-    grid-row: 5/7;
+    grid-column: 2/5;
+    grid-row: 9/11;
     margin: auto;
 }
 
 .step-three{
     width: 100%;
-    grid-column: 7/9;
-    grid-row: 5/7;
-    text-align: center;
-    margin: auto;
-    font-family: "Nixie One", Lato, Helvetica, sans-serif;
-    font-size: 1.25em;
-    color: #00FFFF;
-}
-
-.finish{
-    width: 100%;
-    grid-column: 9/12;
-    grid-row: 9/11;
-    margin: auto;
-}
-
-.step-four{
-    width: 100%;
-    grid-column: 2/8;
+    grid-column: 6/12;
     grid-row: 9/11;
     text-align: center;
     margin: auto;
     font-family: "Neonderthaw", "Nixie One", Lato, Helvetica, sans-serif;
     font-size: 3.5em;
     color: #00FFFF;
+}
+
+.finish{
+    width: 100%;
+    grid-column: 9/12;
+    grid-row: 11/16;
+    margin: auto;
+}
+
+.step-four{
+    width: 100%;
+    grid-column: 2/8;
+    grid-row: 11/16;
+    text-align: center;
+    margin: auto;
+    font-family: "Neonderthaw", "Nixie One", Lato, Helvetica, sans-serif;
+    font-size: 3.5em;
+    color: #FF00FF;
 }
 
 /* Page 3, Gallery */
@@ -495,3 +514,101 @@ footer nav{
     from {opacity: .4} 
     to {opacity: 1}
 }
+
+/* Code for smaller screens. */
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    .header{
+        display: none;
+    }
+    .fa-solid{
+        color: #FFFF66;
+        display: flex;
+        margin-left: auto;
+        padding-right: 10px;
+    }
+    .fa-bars{
+        color: #FFFF66;
+        display: flex;
+        margin-left: auto;
+        padding-right: auto;
+    }
+    .fa-bars:hover{
+        color: #00FFFF;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .why-info, .what-info, .how-info { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+    /* Style the navigation menu */
+    .topnav {
+        display: inline;
+        overflow: hidden;
+        background-color: #041014;
+        position: relative;
+        font-family: "Nixie One", Lato, Helvetica, sans-serif;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+        display: none;
+  }
+
+
+  /* Style navigation menu links */
+  .topnav a {
+        color: #FFFF66;
+        padding: 7px 9px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+        background: #041014;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 46px;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+        border-radius: 3px;
+        color: #00FFFF;
+        background-color: #242424;
+  }
+}
+            
